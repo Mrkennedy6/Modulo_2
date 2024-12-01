@@ -7,9 +7,9 @@
 
 /* Estilo general */
 body {
-    font-family: Arial, sans-serif; /* Heredable */
-    line-height: 1.6; /* Heredable */
-    color: #333; /* Heredable */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
     background-color: #f9f9f9;
     padding: 0 10px;
 }
@@ -17,7 +17,7 @@ body {
 /* Header */
 header {
     background-color: #6f4e37;
-    color: white; /* Heredable dentro del header */
+    color: white;
     padding: 10px 20px;
     text-align: center;
 }
@@ -35,7 +35,7 @@ nav ul {
 }
 
 nav a {
-    color: inherit; /* Usando herencia explícita */
+    color: inherit;
     text-decoration: none;
 }
 
@@ -62,13 +62,13 @@ h2 {
     border-bottom: 2px solid #6f4e37;
     margin-bottom: 10px;
     padding-bottom: 5px;
-    color: inherit; /* Heredando el color */
+    color: inherit;
 }
 
 ul {
     list-style: square;
     padding-left: 20px;
-    color: inherit; /* Heredando el color */
+    color: inherit;
 }
 
 /* Testimonios */
@@ -102,32 +102,83 @@ ul {
     border-radius: 5px;
 }
 
-/* Formularios */
+/* Personalizar café */
+#customize-coffee {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#customize-coffee h2 {
+    color: #6f4e37;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 form label {
     display: block;
     margin: 10px 0 5px;
-    color: inherit; /* Heredando el color */
+    font-weight: bold;
 }
 
-form input, form textarea {
-    width: 100%;
+form select, form input[type="checkbox"] {
+    margin-bottom: 15px;
     padding: 10px;
-    margin-bottom: 10px;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form button {
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #6f4e37;
+}
+
+button[type="submit"] {
     background-color: #6f4e37;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
-form button:hover {
+button[type="submit"]:hover {
     background-color: #5a3a2b;
+}
+
+/* Flexbox para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form fieldset {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+form fieldset label {
+    margin-left: 5px;
 }
 
 /* Footer */
@@ -135,7 +186,7 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
-    color: white; /* Heredable dentro del footer */
+    color: white;
     margin-top: 20px;
 }
 
@@ -144,17 +195,5 @@ footer {
     justify-content: space-between;
     align-items: center;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0
 }
-
-.social-links a {
-    color: white;
-    margin-left: 10px;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-

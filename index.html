@@ -1,89 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafetería Java Bliss</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Personalizado</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Cafetería Java Bliss</h1>
-    <nav>
-      <ul>
-        <li><a href="#menu">Menú</a></li>
-        <li><a href="#about">Nosotros</a></li>
-        <li><a href="#testimonials">Testimonios</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header>
+        <h1>Bienvenidos a la Cafetería</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#customize-coffee">Personaliza tu Café</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="menu">
-      <h2>Menú</h2>
-      <ul>
-        <li><strong>Café Americano</strong> - $2.50</li>
-        <li><strong>Latte</strong> - $3.50</li>
-        <li><strong>Capuchino</strong> - $3.75</li>
-        <li><strong>Pastel de Chocolate</strong> - $4.00</li>
-      </ul>
-    </section>
+    <!-- Main -->
+    <main>
+        <section id="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li>Café Americano</li>
+                <li>Latte</li>
+                <li>Capuchino</li>
+                <li>Macchiato</li>
+                <li>Café con Leche</li>
+            </ul>
+        </section>
 
-    <section id="about">
-      <h2>Nosotros</h2>
-      <p>
-        En <strong>Java Bliss</strong>, creemos en el poder de una buena taza de café. Desde 2010, hemos servido bebidas y postres
-        que alegran el día a nuestros clientes. ¡Ven a visitarnos!
-      </p>
-    </section>
+        <!-- Nueva sección para elegir sabor y condimentos -->
+        <section id="customize-coffee">
+            <h2>Personaliza tu Café</h2>
+            <form action="#">
+                <!-- Selección de tipo de café -->
+                <label for="coffee-type">Elige tu café:</label>
+                <select id="coffee-type" name="coffee-type" required>
+                    <option value="americano">Café Americano</option>
+                    <option value="latte">Latte</option>
+                    <option value="capuccino">Capuchino</option>
+                </select>
 
-    <section id="testimonials">
-      <h2>Testimonios</h2>
-      <div class="testimonials-container">
-        <div class="testimonial">
-          <p>"El mejor café de la ciudad. Siempre vuelvo por más!" - Ana</p>
+                <!-- Selección de sabores -->
+                <fieldset>
+                    <legend>Elige un sabor:</legend>
+                    <input type="checkbox" id="vanilla" name="flavor" value="vainilla">
+                    <label for="vanilla">Vainilla</label>
+                    <input type="checkbox" id="caramel" name="flavor" value="caramelo">
+                    <label for="caramel">Caramelo</label>
+                    <input type="checkbox" id="chocolate" name="flavor" value="chocolate">
+                    <label for="chocolate">Chocolate</label>
+                </fieldset>
+
+                <!-- Selección de condimentos -->
+                <fieldset>
+                    <legend>Elige tus condimentos:</legend>
+                    <input type="checkbox" id="sugar" name="condiment" value="azúcar">
+                    <label for="sugar">Azúcar</label>
+                    <input type="checkbox" id="cinnamon" name="condiment" value="canela">
+                    <label for="cinnamon">Canela</label>
+                    <input type="checkbox" id="whipped-cream" name="condiment" value="crema batida">
+                    <label for="whipped-cream">Crema batida</label>
+                </fieldset>
+
+                <!-- Botón de envío -->
+                <button type="submit">Personalizar Café</button>
+            </form>
+        </section>
+
+        <!-- Testimonios -->
+        <section id="testimonials">
+            <h2>Testimonios</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p>"El mejor café que he probado, totalmente recomendado!"</p>
+                    <p>- Juan Pérez</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Un café delicioso con la opción de personalizarlo como me gusta."</p>
+                    <p>- Ana Gómez</p>
+                </div>
+                <div class="testimonial">
+                    <p>"¡Me encanta la variedad de sabores y condimentos disponibles!"</p>
+                    <p>- Carlos Rodríguez</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promoción -->
+        <section id="promotion">
+            <p>¡Disfruta un 10% de descuento en tu primer pedido con el código "CAFES10"!</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Cafetería. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
         </div>
-        <div class="testimonial">
-          <p>"Excelente ambiente y un servicio increíble." - Carlos</p>
-        </div>
-        <div class="testimonial">
-          <p>"Me encanta la variedad de pasteles, todo delicioso!" - Luisa</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="promotion">
-      <h2>¡Promoción Especial!</h2>
-      <p>¡Obtén un 10% de descuento en tu primera compra! Solo por esta semana.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contacto</h2>
-      <form action="#">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2024 Cafetería Java Bliss. Todos los derechos reservados.</p>
-      <div class="social-links">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>
+
