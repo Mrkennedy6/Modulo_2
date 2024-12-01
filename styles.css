@@ -3,100 +3,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Estilo general */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif; /* Heredable */
+    line-height: 1.6; /* Heredable */
+    color: #333; /* Heredable */
     background-color: #f9f9f9;
     padding: 0 10px;
-  }
-  
-  header {
+}
+
+/* Header */
+header {
     background-color: #6f4e37;
-    color: white;
+    color: white; /* Heredable dentro del header */
     padding: 10px 20px;
     text-align: center;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-size: 2rem;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 15px;
     padding: 10px 0;
-  }
-  
-  nav a {
-    color: white;
+}
+
+nav a {
+    color: inherit; /* Usando herencia explícita */
     text-decoration: none;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     text-decoration: underline;
-  }
-  
-  main {
+}
+
+/* Main */
+main {
     margin: 20px auto;
     max-width: 800px;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  section {
+}
+
+/* Secciones */
+section {
     margin-bottom: 20px;
-  }
-  
-  h2 {
+}
+
+h2 {
     border-bottom: 2px solid #6f4e37;
     margin-bottom: 10px;
     padding-bottom: 5px;
-  }
-  
-  ul {
+    color: inherit; /* Heredando el color */
+}
+
+ul {
     list-style: square;
     padding-left: 20px;
-  }
-  
-  form label {
+    color: inherit; /* Heredando el color */
+}
+
+/* Formularios */
+form label {
     display: block;
     margin: 10px 0 5px;
-  }
-  
-  form input, form textarea {
+    color: inherit; /* Heredando el color */
+}
+
+form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  form button {
+}
+
+form button {
     background-color: #6f4e37;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  form button:hover {
+}
+
+form button:hover {
     background-color: #5a3a2b;
-  }
-  
-  footer {
+}
+
+/* Footer */
+footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
-    color: white;
+    color: white; /* Heredable dentro del footer */
     margin-top: 20px;
-  }
-  
+}
