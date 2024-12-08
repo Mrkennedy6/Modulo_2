@@ -197,3 +197,61 @@ footer {
     max-width: 900px;
     margin: 0
 }
+
+/* lista de productos */
+
+/* Lista deslizable */
+#drink-slider {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#drink-slider h2 {
+    color: #6f4e37;
+    margin-bottom: 15px;
+}
+
+.drink-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.drink-item {
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 150px;
+}
+
+.drink-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.drink-item p {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.drink-item:hover {
+    background-color: #6f4e37;
+    color: white;
+    cursor: pointer;
+}
+
+.drink-item:hover p {
+    color: white;
+}
+
+.drink-item:hover img {
+    filter: brightness(0.9);
+}

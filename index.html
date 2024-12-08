@@ -14,6 +14,7 @@
             <ul>
                 <li><a href="#menu">Menú</a></li>
                 <li><a href="#customize-coffee">Personaliza tu Café</a></li>
+                <li><a href="#drink-slider">Bebidas</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
@@ -36,15 +37,12 @@
         <section id="customize-coffee">
             <h2>Personaliza tu Café</h2>
             <form action="#">
-                <!-- Selección de tipo de café -->
                 <label for="coffee-type">Elige tu café:</label>
                 <select id="coffee-type" name="coffee-type" required>
                     <option value="americano">Café Americano</option>
                     <option value="latte">Latte</option>
                     <option value="capuccino">Capuchino</option>
                 </select>
-
-                <!-- Selección de sabores -->
                 <fieldset>
                     <legend>Elige un sabor:</legend>
                     <input type="checkbox" id="vanilla" name="flavor" value="vainilla">
@@ -54,8 +52,6 @@
                     <input type="checkbox" id="chocolate" name="flavor" value="chocolate">
                     <label for="chocolate">Chocolate</label>
                 </fieldset>
-
-                <!-- Selección de condimentos -->
                 <fieldset>
                     <legend>Elige tus condimentos:</legend>
                     <input type="checkbox" id="sugar" name="condiment" value="azúcar">
@@ -65,10 +61,75 @@
                     <input type="checkbox" id="whipped-cream" name="condiment" value="crema batida">
                     <label for="whipped-cream">Crema batida</label>
                 </fieldset>
-
-                <!-- Botón de envío -->
                 <button type="submit">Personalizar Café</button>
             </form>
+        </section>
+
+        <!-- Nueva sección deslizable de bebidas -->
+        <section id="drink-slider">
+            <h2>Nuestras Bebidas</h2>
+            <div class="drink-list">
+                <div class="drink-item">
+                    <img src="images/cafe-americano.jpg" alt="Café Americano">
+                    <p>Café Americano</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/espresso.jpg" alt="Espresso">
+                    <p>Espresso</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/latte.jpg" alt="Latte">
+                    <p>Latte</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/capuchino.jpg" alt="Capuchino">
+                    <p>Capuchino</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/macchiato.jpg" alt="Macchiato">
+                    <p>Macchiato</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/moka.jpg" alt="Moka">
+                    <p>Moka</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/flat-white.jpg" alt="Flat White">
+                    <p>Flat White</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/cafe-con-leche.jpg" alt="Café con Leche">
+                    <p>Café con Leche</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/cold-brew.jpg" alt="Cold Brew">
+                    <p>Cold Brew</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/irish-coffee.jpg" alt="Irish Coffee">
+                    <p>Irish Coffee</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/cafe-helado.jpg" alt="Café Helado">
+                    <p>Café Helado</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/affogato.jpg" alt="Affogato">
+                    <p>Affogato</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/ristretto.jpg" alt="Ristretto">
+                    <p>Ristretto</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/cafe-turco.jpg" alt="Café Turco">
+                    <p>Café Turco</p>
+                </div>
+                <div class="drink-item">
+                    <img src="images/cafe-bombon.jpg" alt="Café Bombón">
+                    <p>Café Bombón</p>
+                </div>
+            </div>
         </section>
 
         <!-- Testimonios -->
@@ -109,4 +170,5 @@
     </footer>
 </body>
 </html>
+
 
