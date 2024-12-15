@@ -592,3 +592,101 @@ form fieldset label {
     }
 }
 
+/*TOP PRODUCT*/
+
+/* Estilos generales */
+.container-categories {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.card-category {
+	position: relative;
+	background-color: #ffffff; /* Fondo más claro */
+	padding: 3rem; /* Aumentar el padding para más espacio */
+	text-align: center;
+	border-radius: 1rem;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Sombra más definida */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.card-category:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto principal */
+.card-category p {
+	font-size: 1.8rem; /* Texto más grande */
+	font-weight: bold;
+	color: #444; /* Color más oscuro para mejor legibilidad */
+	opacity: 0.95;
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card-category:hover p {
+	transform: scale(1.1);
+	color: #222; /* Color aún más oscuro al hacer hover */
+}
+
+/* Botón Ver más */
+.card-category span {
+	display: inline-block;
+	margin-top: 1.5rem;
+	color: #fff;
+	background-color: #ff8c42;
+	padding: 0.7rem 2.5rem;
+	border-radius: 2rem;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.card-category:hover span {
+	background-color: #ff641a;
+	color: #f5f5f5;
+	transform: scale(1.1);
+}
+
+/* animaciones  */
+.card-category::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	background-color: rgba(165, 198, 241, 0.15);
+	border-radius: 50%;
+	transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	z-index: -1;
+}
+
+.card-category:hover::before {
+	width: 200%; 
+	height: 200%;
+	opacity: 1;
+}
+
+/* Agrego Botones de opciones */
+.container-options span {
+	color: #555;
+	background-color: #fff;
+	padding: 0.7rem 3rem;
+	font-size: 2.6rem; 
+	text-transform: capitalize;
+	border-radius: 2rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.container-options span:hover {
+	background-color: #ff8c42;
+	color: #fff;
+	transform: scale(1.1);
+}
