@@ -238,13 +238,50 @@ html {
 	border-radius: 3rem;
 }
 /* Main */
-main {
-    margin: 20px auto;
-    max-width: 800px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.main-content {
+	background-color: var(--background-color);
+}
+
+/*FEATURES*/
+
+.container-features {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+	padding: 3rem 0;
+}
+
+.card-feature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+
+	background-color: #fff;
+	border-radius: 1rem;
+	padding: 1.5rem 0;
+}
+
+.card-feature i {
+	font-size: 2.7rem;
+	color: var(--primary-color);
+}
+
+.feature-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.feature-content span {
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: var(--dark-color);
+}
+
+.feature-content p {
+	color: #777;
+	font-weight: 500;
 }
 
 /* Secciones */
@@ -296,7 +333,128 @@ ul {
     border-radius: 5px;
 }
 
-/* Personalizar café */
+/*FEATURES*/
+
+.container-features {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+	padding: 3rem 0;
+}
+
+.card-feature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+
+	background-color: #fff;
+	border-radius: 1rem;
+	padding: 1.5rem 0;
+}
+
+.card-feature i {
+	font-size: 2.7rem;
+	color: var(--primary-color);
+}
+
+.feature-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.feature-content span {
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: var(--dark-color);
+}
+
+.feature-content p {
+	color: #777;
+	font-weight: 500;
+}
+
+
+/*CATEGORIES*/
+
+
+.top-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+}
+
+.category-moca {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('img/moca-category.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.category-capuchino {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('img/capuchino-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-expreso {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('img/expreso-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card-category p {
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category span {
+	font-size: 1.6rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.card-category span:hover {
+	color: var(--primary-color);
+}
+
+/* Personalizar café 
 #customize-coffee {
     background-color: #f7f7f7;
     padding: 20px;
@@ -351,8 +509,9 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #5a3a2b;
 }
+    */
 
-/* Flexbox para el formulario */
+/* Flexbox para el formulario 
 form {
     display: flex;
     flex-direction: column;
@@ -373,6 +532,150 @@ form fieldset {
 
 form fieldset label {
     margin-left: 5px;
+}
+*/
+
+/* Lista deslizable */
+
+
+#drink-slider {
+    margin-bottom: 20px;
+    text-align: center;
+	font-size: 20px;
+}
+
+#drink-slider h2 {
+    color: #6f4e37;
+    margin-bottom: 15px;
+}
+
+/* Animación al aparecer la sección */
+#drink-slider {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+}
+
+/* Animación del título */
+#drink-slider h2 {
+    color: #6f4e37;
+    margin-bottom: 15px;
+    animation: slideInFromLeft 1s ease-in-out; /* Animación deslizante */
+}
+
+/* Animación para el carrusel */
+.drink-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 25px;
+    scroll-behavior: smooth;
+    animation: fadeIn 1s ease-in-out; /* Efecto de aparición */
+}
+
+/* Estilo y animación para cada ítem */
+.drink-item {
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    animation: popIn 0.8s ease-in-out; /* Animación al cargar cada ítem */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.drink-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade profundidad */
+}
+
+/* Animación de las imágenes */
+.drink-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease; /* Suavidad en hover */
+    animation: zoomIn 1s ease-in-out; /* Efecto de zoom inicial */
+}
+
+.drink-item:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+    filter: brightness(0.8); /* Oscurece un poco la imagen */
+}
+
+/* Texto dentro de cada ítem */
+.drink-item p {
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: opacity 0.4s ease; /* Transición suave en hover */
+    opacity: 0; /* Oculto inicialmente */
+}
+
+.drink-item:hover p {
+    opacity: 1; /* Muestra el texto en hover */
+}
+
+/* Animaciones @keyframes */
+
+/* Fade-in general */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Deslizamiento desde la izquierda */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Pop-in para los ítems */
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Zoom-in para imágenes */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Footer */
