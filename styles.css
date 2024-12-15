@@ -101,7 +101,8 @@ html {
 	display: flex;
 	flex-direction: column;
 }
-/*NAVBAR*/
+
+/* ************* NAVBAR ************* */
 .container-navbar {
 	background-color: var(--primary-color);
 }
@@ -197,6 +198,7 @@ html {
 	color: #fff;
 }
 
+
 /*BANNER*/
 
 .banner {
@@ -237,101 +239,14 @@ html {
 	text-transform: uppercase;
 	border-radius: 3rem;
 }
-/* Main */
+
+
+/* MAIN CONTENT*/
+
 .main-content {
 	background-color: var(--background-color);
 }
 
-/*FEATURES*/
-
-.container-features {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 3rem;
-	padding: 3rem 0;
-}
-
-.card-feature {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1.5rem;
-
-	background-color: #fff;
-	border-radius: 1rem;
-	padding: 1.5rem 0;
-}
-
-.card-feature i {
-	font-size: 2.7rem;
-	color: var(--primary-color);
-}
-
-.feature-content {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-}
-
-.feature-content span {
-	font-weight: 700;
-	font-size: 1.2rem;
-	color: var(--dark-color);
-}
-
-.feature-content p {
-	color: #777;
-	font-weight: 500;
-}
-
-/* Secciones */
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    border-bottom: 2px solid #6f4e37;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    color: inherit;
-}
-
-ul {
-    list-style: square;
-    padding-left: 20px;
-    color: inherit;
-}
-
-/* Testimonios */
-.testimonials-container {
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.testimonial {
-    background-color: #f1f1f1;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-}
-
-.testimonial p {
-    font-style: italic;
-    color: #555;
-}
-
-/* Promoción */
-#promotion {
-    background-color: #fff3cd;
-    border: 1px solid #ffeeba;
-    padding: 15px;
-    text-align: center;
-    border-radius: 5px;
-}
 
 /*FEATURES*/
 
@@ -453,7 +368,6 @@ ul {
 .card-category span:hover {
 	color: var(--primary-color);
 }
-
 /* Personalizar café 
 #customize-coffee {
     background-color: #f7f7f7;
@@ -461,6 +375,7 @@ ul {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+	font-size: 25px;
 }
 
 #customize-coffee h2 {
@@ -509,9 +424,9 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #5a3a2b;
 }
-    */
 
-/* Flexbox para el formulario 
+/* Flexbox para el formulario */
+/*
 form {
     display: flex;
     flex-direction: column;
@@ -533,7 +448,6 @@ form fieldset {
 form fieldset label {
     margin-left: 5px;
 }
-*/
 
 /* Lista deslizable */
 
@@ -678,131 +592,3 @@ form fieldset label {
     }
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.footer-content p {
-    margin: 0;
-}
-
-/* Lista deslizable */
-#drink-slider {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#drink-slider h2 {
-    color: #6f4e37;
-    margin-bottom: 15px;
-}
-
-.drink-list {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 10px;
-    scroll-behavior: smooth;
-}
-
-.drink-item {
-    flex: 0 0 auto;
-    text-align: center;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    width: 150px;
-}
-
-.drink-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.drink-item p {
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-}
-
-.drink-item:hover {
-    background-color: #6f4e37;
-    color: white;
-    cursor: pointer;
-}
-
-.drink-item:hover p {
-    color: white;
-}
-
-.drink-item:hover img {
-    filter: brightness(0.9);
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    main {
-        padding: 15px;
-    }
-
-    .testimonials-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial {
-        width: 80%;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .drink-list {
-        gap: 10px;
-    }
-
-    .drink-item {
-        width: 120px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    button[type="submit"] {
-        font-size: 0.9rem;
-    }
-
-    form fieldset {
-        flex-direction: column;
-    }
-
-    .drink-item {
-        width: 100px;
-    }
-}
